@@ -1,6 +1,8 @@
 # owa-honeypot
 A basic flask based Outlook Web Honey pot
 
+This is  a fork of [joda32/owa-honeypot](https://github.com/joda32/owa-honeypot) but dockerized,  loggging to file and updated dependencies.
+
 ![](docs/OWA_honeypot_1.png)
 
 ## why?
@@ -10,13 +12,8 @@ Most corps have some form of OWA and I couldn't find an out of the box OWA only 
 python3 + flask
 
 ## how to install
-git clone https://github.com/joda32/owa-honeypot.git
-cd owa-honeypot
-python3 -m venv env
-source env/bin/activate
-pip install -r requirements.txt
 
-python owa_pot.py
+`docker run --rm --name owa-honeypot -v .:/log -p 80:80 justsky/owa`
 
 ## here be dragons!
 In the code I basically start the flask dev server on port 80, that is a really bad idea if you want to run it on the internet. I have a todo to change that. :)
