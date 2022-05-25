@@ -1,6 +1,7 @@
 import subprocess as sp
 from concurrent.futures import ThreadPoolExecutor
 
+
 def log_popen_pipe(p, stdfile):
 
     with open("/log/owa.log", "w") as f:
@@ -12,8 +13,12 @@ def log_popen_pipe(p, stdfile):
         # Write the rest from the buffer
         f.write(stdfile.read())
 
+
 with sp.Popen(
-    ["python3", "owa_poy.py"],stdout=sp.PIPE,stderr=sp.PIPE,text=True,
+    ["python3", "owa_pot.py"],
+        stdout=sp.PIPE,
+        stderr=sp.PIPE,
+        text=True,
 ) as p:
 
     with ThreadPoolExecutor(2) as pool:

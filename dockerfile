@@ -1,6 +1,6 @@
 FROM python:slim
 
-WORKDIR /owa-honeypot
+WORKDIR /owa
 
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
