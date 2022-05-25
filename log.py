@@ -13,7 +13,7 @@ def log_popen_pipe(p, stdfile):
         f.write(stdfile.read())
 
 with sp.Popen(
-    ["python3", "-m" , "flask", "run", "--host=0.0.0.0"],stdout=sp.PIPE,stderr=sp.PIPE,text=True,
+    ["python3", "owa_poy.py"],stdout=sp.PIPE,stderr=sp.PIPE,text=True,
 ) as p:
 
     with ThreadPoolExecutor(2) as pool:
