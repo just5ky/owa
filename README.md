@@ -1,5 +1,4 @@
-# owa-honeypot
-A basic flask based Outlook Web Honey pot
+# Outlook Web Honey pot
 
 ![Docker Build](https://github.com/just5ky/owa/workflows/Docker/badge.svg) ![Docker Pulls](https://img.shields.io/docker/pulls/justsky/owa) ![Docker Size](https://img.shields.io/docker/image-size/justsky/owa?color=orange)
 
