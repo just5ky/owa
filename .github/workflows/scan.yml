@@ -41,7 +41,7 @@ jobs:
     - name: Pull the Docker image
       run: docker pull justsky/owa:latest
     - name: Run the Anchore scan action itself with GitHub Advanced Security code scanning integration enabled
-      uses: anchore/scan-action@4be3c24559b430723e51858969965e163b196957
+      uses: anchore/scan-action@24fd7c9060f3c96848dd1929fac8d796fb5ae4b4
       with:
         image: "justsky/owa:latest"
         acs-report-enable: true
